@@ -1,2 +1,0 @@
-import{t as o,a as i}from"../chunks/CXo5uikm.js";import{b as p,E as f,d as c,n as d,f as l,h,g as m,s as u,i as v,j as _}from"../chunks/CovOv-e2.js";function b(e,n,...a){var r=e,s=d,t;p(()=>{s!==(s=n())&&(t&&(l(t),t=null),t=c(()=>s(r,...a)))},f),h&&(r=m)}var g=o(`export const ssr = false;
-export const prerender = true; <!>`,1);function E(e,n){_();var a=g(),r=u(v(a));b(r,()=>n.children),i(e,a)}export{E as component};
