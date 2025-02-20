@@ -117,7 +117,7 @@ returns
       "sequence_id": "0",
       "etag": "0",
       "sha1": "1b3774096610f1e829974f2b247b121e40ad77f0",
-      "name": "csds_tstesttsst.jpeg",
+      "name": "testtesttest.jpeg",
       "description": "",
       "size": 34475,
       "path_collection": {
@@ -192,10 +192,10 @@ returns
   "id": "1783205659173",
   "etag": "1",
   "shared_link": {
-    "url": "https://uchicago.box.com/v/csds-test-test-test",
+    "url": "https://uchicago.box.com/v/test-test-test",
     "download_url": "https://uchicago.box.com/shared/static/s91y4c2g073hpj5t9ztvomm99w5a95b5.jpeg",
-    "vanity_url": "https://uchicago.box.com/v/csds-test-test-test",
-    "vanity_name": "csds-test-test-test",
+    "vanity_url": "https://uchicago.box.com/v/test-test-test",
+    "vanity_name": "test-test-test",
     "effective_access": "open",
     "effective_permission": "can_download",
     "is_password_enabled": false,
