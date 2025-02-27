@@ -1,0 +1,69 @@
+[project]
+name = "box-uploader"
+version = "0.1.0"
+description = "A utility for uploading files to Box.com in bulk with concurrency and status tracking"
+requires-python = "==3.12.*"
+dependencies = [
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "box-sdk-gen==1.12.0",
+    "flask==3.1.0",
+]
+
+
+[tool.black]
+line-length = 120
+target-version = ["py312"]
+
+[tool.isort]
+lines_between_types = 1
+profile = "black"
+line_length = 120
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+extend-select = [
+    # by default, ruff enables all F and a subset of E rules
+    # for a description of rulesets and examples, see:
+    # https://docs.astral.sh/ruff/rules/
+    "ARG",
+    "B",       # bugbear - identifies likely bugs
+    "C4",      # flake8-comprehensions - identifies redundant calls in comprehensions
+    "D",       # pydocstyle - requires docstrings on all public modules/functions/classes
+    "I",       # isort
+    "N801",    # pep8-naming - enforce ClassNamesStyle
+    "N804",    # pep8-naming - first arg of classmethod should be cls
+    "N805",    # pep8-naming - first arg of method should be self
+    "PD",      # pandas-vet
+    "PLR2004", # Pylint no magic values!
+    "PTH",     # prefer pathlib over os.path as seems to be the consensus
+    "Q",       # flake8-quotes - double quotes preferred (like black)
+    "UP",      # pyupgrade - requires preferred syntax in newer python versions
+    "YTT",     # flake8-2020 - corrects code that doesn't anticipate 2 digit python minor version
+]
+
+ignore = [
+    "D415",   # allow first line of doctstrings to end without punctuation
+    "ANN002", # missing type on *args
+    "ANN003", # missing type on **kwargs
+    "B905",   # won't work on python <3.10
+    "D100",   # missing module docstring
+    "D203",   # no blank line before class
+    "D211",   # no blank line before class (compatible with D203)
+    "D212",   # multi-line summary first line
+    "D107",   # missing docstring in __init__
+    "D213",   # multi-line summary second line (explicitly list the ignored rule)
+    "PD015",  # pandas-vet - allow pd.merge usage.
+]
+
+[dependency-groups]
+dev = [
+    "pandas-stubs>=2.2.3.241126",
+    "watchdog>=6.0.0",
+    "ruff==0.9.6",
+    "pre-commit==4.1.0",
+    "isort>=6.0.0",
+    "black>=25.1.0",
+]
