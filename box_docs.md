@@ -1,6 +1,10 @@
+# Documentation for box uploader app
+
+Information on how to use the box uploader.
+
 # Get a Token
 1. https://uchicago.app.box.com/developers/console/newapp
-2. Custom app. Purpose: automation, user: customer, oauth
+2. Custom app. Purpose: automation, user: customer, oauth 2.0
 3. Back to 'My Platforms Apps'
 4. Hover on app, click '...'
 5. Generate Developer Token
@@ -101,7 +105,7 @@ curl -i -X POST "https://upload.box.com/api/2.0/files/content" \
      -F attributes='{"name":"filename.extension", "parent":{"id":"0"}}' \
      -F file=@path/to/file.txt
 ```
-returns 
+returns
 ```json
 {
   "total_count": 1,
@@ -111,7 +115,7 @@ returns
       "id": "1783205659173", !!!!!HERE!!!!!!!
       "file_version": {
         "type": "file_version",
-        "id": "1964938667973", 
+        "id": "1964938667973",
         "sha1": "1b3774096610f1e829974f2b247b121e40ad77f0"
       },
       "sequence_id": "0",

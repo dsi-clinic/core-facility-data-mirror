@@ -1,0 +1,4 @@
+BOX_DEVERLOP_TOKEN=
+# Root directory for file scanning
+# (Absolute path to the directory containing files to upload)
+ROOT_DIR
